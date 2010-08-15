@@ -21,5 +21,15 @@
 	    		<action android:name="android.intent.action.HEADSET_PLUG" />
 	    	</intent-filter>
 	    </receiver>
+	    
+	    <receiver android:name=".HeadsetRegistrationServiceBootStarter">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<category android:name="android.intent.category.HOME" />
+			</intent-filter>
+		</receiver>
 	</application>
+	
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+	
 </manifest>

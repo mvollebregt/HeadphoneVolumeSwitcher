@@ -42,7 +42,7 @@ import android.widget.CheckBox;
 public class HeadphoneVolumeActivity extends Activity {
 	
 	public static final String PREFS_NAME = "prefs";
-	private static final String IS_RUNNING = "isRunning";
+	public static final String IS_RUNNING = "isRunning";
 
 	/**
 	 * Shows the screen to start / stop the head set volume service.
@@ -63,7 +63,6 @@ public class HeadphoneVolumeActivity extends Activity {
 		CheckBox checkBox = (CheckBox) target;
 		boolean isRunning = false;
 		if (checkBox.isChecked()) {
-			// isRunning = true;
 			isRunning = null != startService(new Intent(this, HeadsetRegistrationService.class));
 		} else {
 			stopService(new Intent(this, HeadsetRegistrationService.class));
