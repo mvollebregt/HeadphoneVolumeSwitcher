@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Copyright 2010 Michel Vollebregt
+  
+This file is part of Headphone Volume Switcher.
+
+Headphone Volume Switcher is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Headphone Volume Switcher is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Headphone Volume Switcher. If not, see <http://www.gnu.org/licenses/>.
+ -->
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/IntroductionText" android:text="@string/introduction" android:padding="10px"></TextView>
+<TwoLineListItem android:id="@+id/TwoLineListItem01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TwoLineListItem><CheckBox android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ServiceToggleButton" android:text="@string/start" android:layout_gravity="center_horizontal" android:onClick="toggleService"></CheckBox><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:typeface="normal" android:layout_gravity="center_horizontal" android:layout_marginTop="10px" android:id="@+id/OkButton" android:text="@string/ok" android:minWidth="100px" android:onClick="closeActivity"></Button>
+
+
+
+</LinearLayout>
