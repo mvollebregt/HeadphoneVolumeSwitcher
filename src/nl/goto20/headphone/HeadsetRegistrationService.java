@@ -40,7 +40,6 @@ public class HeadsetRegistrationService extends Service {
 
 	@Override
 	public IBinder onBind(Intent intent) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	
@@ -54,7 +53,6 @@ public class HeadsetRegistrationService extends Service {
 	
 	@Override
 	public void onDestroy() {
-		HeadsetBroadcastReceiver.showMessage(this, "stopped running service");
 		unregisterReceiver(receiver);
 	}
 }
